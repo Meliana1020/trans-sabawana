@@ -1,15 +1,24 @@
 "use client";
 import { useState } from "react";
 import ServiceCard from "@/components/container/service-card";
+import Image from "next/image";
+
+interface ServiceType {
+  imageSrc: string;
+  title: string;
+  description: string;
+  content: string;
+}
 
 export default function OurService() {
-  const [selectedService, setSelectedService] = useState<any>(null);
+  const [selectedService, setSelectedService] = useState<ServiceType | null>(null);
 
-  const services = [
+  const services: ServiceType[] = [
     {
       imageSrc: "/private-trip1.jpeg",
       title: "Private Trip Gunung dan wisata Wonosobo",
-      description: "Ingin mendaki gunung atau menjelajahi destinasi wisata tanpa ribet? Kami hadir untuk memberikan pengalaman private trip yang aman, nyaman, dan berkesan!",
+      description:
+        "Ingin mendaki gunung atau menjelajahi destinasi wisata tanpa ribet? Kami hadir untuk memberikan pengalaman private trip yang aman, nyaman, dan berkesan!",
       content: `
         Jelajahi Keindahan Alam dengan Private Trip Eksklusif!
 
@@ -34,7 +43,8 @@ export default function OurService() {
     {
       imageSrc: "/profile.jpg",
       title: "Porter Gunung",
-      description: "Mau mendaki tanpa beban berat? Serahkan barang bawaanmu kepada porter profesional kami! Dengan pengalaman dan ketangguhan di medan gunung, kami siap membantu perjalananmu agar lebih nyaman dan menyenangkan.",
+      description:
+        "Mau mendaki tanpa beban berat? Serahkan barang bawaanmu kepada porter profesional kami! Dengan pengalaman dan ketangguhan di medan gunung, kami siap membantu perjalananmu agar lebih nyaman dan menyenangkan.",
       content: `
         Jasa Porter Gunung – Pendakian Lebih Ringan & Nyaman!
 
@@ -55,7 +65,8 @@ export default function OurService() {
     {
       imageSrc: "/rentail.jpeg",
       title: "Rentail Equipment Outdoor",
-      description: "Mau mendaki gunung atau camping tapi nggak punya perlengkapan? Jangan khawatir! Kami menyediakan *jasa rental peralatan outdoor* yang lengkap dan berkualitas, siap mendukung petualanganmu dengan nyaman dan aman.",
+      description:
+        "Mau mendaki gunung atau camping tapi nggak punya perlengkapan? Jangan khawatir! Kami menyediakan *jasa rental peralatan outdoor* yang lengkap dan berkualitas, siap mendukung petualanganmu dengan nyaman dan aman.",
       content: `
         Sewa Peralatan Outdoor – Lengkap, Berkualitas, & Terjangkau!  
 
@@ -74,13 +85,15 @@ export default function OurService() {
 
         Jangan biarkan perlengkapan jadi hambatan untuk menikmati alam! *Hubungi kami sekarang* untuk cek ketersediaan dan reservasi. 📩
       `,
-    }
+    },
   ];
 
   return (
-    <div className={`flex flex-col items-center justify-center min-h-screen bg-neutral-950 ${
-      selectedService ? 'brightness-50' : ''
-    } transition-all duration-300`}>
+    <div
+      className={`flex flex-col items-center justify-center min-h-screen bg-neutral-950 ${
+        selectedService ? "brightness-50" : ""
+      } transition-all duration-300`}
+    >
       <div className="w-full px-10">
         <h2 className="mb-6 p-4 text-center items-center text-6xl font-bold text-zinc-500">
           Layanan <span className="text-white">Jejak Sabawana</span>
@@ -92,7 +105,7 @@ export default function OurService() {
               imageSrc={service.imageSrc}
               title={service.title}
               description={service.description}
-              onClick={() => setSelectedService(service)}
+              onClick={() => setSelectedService(service as ServiceType)}
             />
           ))}
         </div>
@@ -101,11 +114,11 @@ export default function OurService() {
       {/* Modal */}
       {selectedService && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
-          <div 
-            className="absolute inset-0" 
+          <div
+            className="absolute inset-0"
             onClick={() => setSelectedService(null)}
           />
-          
+
           <div className="relative bg-neutral-900 rounded-xl p-8 max-w-2xl w-full mx-4 shadow-xl max-h-[90vh] overflow-y-auto">
             <button
               className="absolute top-4 right-4 text-white hover:text-gray-300 text-2xl"
@@ -113,19 +126,19 @@ export default function OurService() {
             >
               &times;
             </button>
-            
+
             <div className="relative h-96 w-full mb-6 rounded-lg overflow-hidden">
-              <img
+              <Image
                 src={selectedService.imageSrc}
                 alt={selectedService.title}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            
+
             <h3 className="text-3xl font-bold text-white mb-4">
               {selectedService.title}
             </h3>
-            
+
             <p className="text-gray-300 text-lg leading-relaxed whitespace-pre-line">
               {selectedService.content}
             </p>

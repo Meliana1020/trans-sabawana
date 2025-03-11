@@ -42,7 +42,7 @@ export default function Hero() {
             Explore The World
           </h3>
           <h1 className="mt-2 text-5xl md:text-6xl font-bold text-white leading-tight">
-            It's time to travel
+          {"It's time to travel"}
           </h1>
           <p className="text-5xl md:text-6xl font-bold text-white leading-tight">
             with Trans Sabawana
