@@ -12,7 +12,7 @@ export default function Hero() {
       />
       <div className="relative z-10 flex h-full flex-col justify-between px-8 py-20 text-white">
         <div className="flex flex-grow flex-col items-center justify-center text-center">
-          <h1 className="text-6xl font-bold mb-3">JEJAK SABAWANA</h1>
+          <h1 className="text-4xl sm:text-6xl md:text-6xl lg:text-6xl font-bold mb-3">JEJAK SABAWANA</h1>
           <p className="text-lg text-justify">
             Di tanah sejuk Wonosobo lahirlah Open Trip yang bernama Jejak
             Sabawana, sebuah nama yang berbisik dari rimbunnya makna.

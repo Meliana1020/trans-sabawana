@@ -9,7 +9,7 @@ export default function Hero() {
     },
     {
       id: 2,
-      title: "Trip to",
+      title: "Open Trip",
       image: "/trip.jpg",
     },
     {
@@ -38,21 +38,21 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col lg:flex-row justify-between items-center w-full px-6 py-16 lg:py-24 max-w-7xl mx-auto">
         <div className="text-start lg:w-1/2">
-          <h3 className="text-lg font-semibold text-neutral-400 uppercase">
+          <h3 className="text-lg font-semibold text-neutral-400 uppercase sm:text-red-700 lg:text-green-700 md:text-blue-700">
             Explore The World
           </h3>
-          <h1 className="mt-2 text-5xl md:text-6xl font-bold text-white leading-tight">
+          <h1 className="mt-2 text-4xl md:text-6xl font-bold text-white leading-tight">
           {"It's time to travel"}
           </h1>
-          <p className="text-5xl md:text-6xl font-bold text-white leading-tight">
+          <p className="text-4xl md:text-6xl font-bold text-white leading-tight">
             with Trans Sabawana
           </p>
-          <p className="mt-4 text-neutral-300 text-lg max-w-md">
+          <p className="mt-2 text-neutral-300 text-md max-w-md">
             Create the route you want to travel with us.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 w-full max-w-sm lg:max-w-md p-4 mt-8 lg:mt-0">
+        <div className="grid grid-cols-2 gap-3 w-full max-w-sm lg:max-w-md p-4 mt-4 lg:mt-0">
           {galleryItems.map((item) => (
             <div
               key={item.id}
@@ -75,7 +75,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <footer className="relative w-full bottom-10 text-center text-neutral-400 text-sm">
+      <footer className="relative w-full sm:bottom-10 md:bottom-10 lg:bottom-10 text-center text-neutral-400 text-sm">
         © 2024 Meliana. All Rights Reserved
       </footer>
     </div>

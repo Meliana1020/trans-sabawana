@@ -1,7 +1,7 @@
 export default function Rute() {
     return (
       <div className="mx-auto p-6 bg-zinc-900">
-        <h2 className="text-6xl text-zinc-200 font-bold text-center mb-6">Rute Perjalanan</h2>
+        <h2 className="sm:text-6xl md:text-6xl lg:text-xl text-4xl text-zinc-200 font-bold text-center mb-6">Rute Perjalanan</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">  
           <div className="bg-zinc-300 text-zinc-900 p-6 rounded-2xl shadow-lg">

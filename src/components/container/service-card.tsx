@@ -25,7 +25,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   onClick,
 }) => {
   return (
-    <Card className="w-full max-w-[400px] min-h-[300px] md:min-h-[350px] lg:min-h-[400px] p-4 bg-zinc-800 border-none shadow-white shadow-sm flex flex-col hover:scale-[1.02] transition-transform duration-300 mx-auto">
+    <Card className="w-full max-w-[450px] min-h-[300px] md:min-h-[350px] lg:min-h-[400px] p-4 bg-zinc-800 border-none shadow-white shadow-sm flex flex-col hover:scale-[1.02] transition-transform duration-300 mx-auto">
       <CardHeader className="p-0 mb-2">
         <div className="w-full h-48 md:h-56 lg:h-60 relative">
           <Image

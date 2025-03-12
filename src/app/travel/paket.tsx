@@ -11,6 +11,8 @@ export default function Paket() {
           <Image
             src="/paket.jpeg"
             alt="peket"
+            width={500}
+            height={200}
             className="w-full max-w-sm md:max-w-md lg:max-w-lg"
           />
         </div>

@@ -83,7 +83,7 @@ export default function ContactUs() {
       <div className="w-full max-w-lg flex flex-col gap-6">
         {/* WhatsApp */}
         <Link
-          href="https://wa.me/6281234567890"
+          href="https://wa.me/6282135750670"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 bg-emerald-500 p-4 rounded-xl shadow-md hover:bg-emerald-700 transition"
@@ -94,22 +94,23 @@ export default function ContactUs() {
 
         {/* Instagram */}
         <Link
-          href="https://instagram.com/trans_sabawana"
+          href="https://www.instagram.com/andriraaa/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 bg-amber-500 p-4 rounded-xl shadow-md hover:bg-amber-700 transition"
         >
           <FaInstagram className="text-3xl" />
-          <span className="text-lg font-medium">@trans_sabawana</span>
+          <span className="text-lg font-medium">@Andriraaa
+          </span>
         </Link>
 
         {/* Email */}
         <Link
-          href="mailto:info@transsabawana.com"
+          href="mailto:andrirahmanto69@gmail.com"
           className="flex items-center gap-4 bg-blue-500 p-4 rounded-xl shadow-md hover:bg-blue-700 transition"
         >
           <FaEnvelope className="text-3xl" />
-          <span className="text-lg font-medium">info@transsabawana.com</span>
+          <span className="text-lg font-medium">andrirahmanto69@gmail.com</span>
         </Link>
 
         {/* Lokasi */}

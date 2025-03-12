@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -33,7 +34,9 @@ export default function Hero() {
             menyediakan layanan pengiriman paket dengan sistem express 1 hari
             sampai!
           </p>
-          <p className="text-lg text-gray-300">Klik {" "}<span className="text-blue-800 cursor-pointer"><i>di sini</i></span> jika anda ingin berdiskusi dengan kami dan lakukan reservasi</p>
+          <p className="text-lg text-gray-300">Klik {" "}<span className="text-blue-800 font-bold cursor-pointer">
+              <Link href="https://wa.me/6282135750670">di sini</Link>
+            </span>{" "} jika anda ingin berdiskusi dengan kami dan lakukan reservasi</p>
           <p className="mt-4 text-gray-300 font-bold text-md">💬 Mau perjalanan santai tanpa ribet? Travel Lane jawabannya!</p>
           <p className="mt-2 text-gray-300 font-bold text-md">📲 Hubungi kami sekarang dan nikmati perjalanan terbaik! 🚀</p>
           

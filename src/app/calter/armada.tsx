@@ -4,7 +4,7 @@ export default function Armada() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-neutral-950">
       <div className="w-full px-10">
-        <h2 className="mb-6 p-4 text-center items-center text-6xl font-bold text-zinc-500">
+        <h2 className="mb-6 p-4 text-center items-center sm:text-6xl md:text-6xl lg:text-6xl text-4xl font-bold text-zinc-500">
           Armada <span className="text-white">Kami</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">

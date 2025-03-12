@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -39,8 +40,8 @@ export default function Hero() {
           </p>
           <p className="text-lg text-grayy-300">
             Klik{" "}
-            <span className="text-blue-800 cursor-pointer">
-              <i>di sini</i>
+            <span className="text-blue-800 font-bold cursor-pointer">
+              <Link href="https://wa.me/6282135750670">di sini</Link>
             </span>{" "}
             jika anda ingin berdiskusi dengan kami
           </p>
