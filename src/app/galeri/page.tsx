@@ -138,14 +138,21 @@ export default function GalleryPage() {
       id: 19,
       title: "Video Antar Paket Sembako",
       video: "/sembako.mp4",
-      tags: [],
+      tags: ["Pengusaha Muda", "Perjuangan"],
       type: "video",
     },
     {
       id: 20,
       title: "Video Travel Lane",
       video: "/travel.mp4",
-      tags: [],
+      tags: ["Travel Lane"],
+      type: "video",
+    },
+    {
+      id: 21,
+      title: "Video Travel Lane",
+      video: "/travel2.mp4",
+      tags: ["Jasa Travel", "kenyamanan"],
       type: "video",
     },
   ];

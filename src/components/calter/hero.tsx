@@ -8,20 +8,17 @@ export default function Hero() {
         <div className="grid grid-cols-2 gap-4">
           {[
             { src: "/calter.jpg", alt: "Calter" },
-            { src: "/calter-grandmax.jpg", alt: "Calter Grandmax" },
-            { src: "/calter-bus-medium.jpeg", alt: "Calter Bus Medium" },
-            { src: "/calter-elf-long.jpeg", alt: "Calter Elf Long" },
+            { src: "/travel4.jpg", alt: "Calter Grandmax" },
+            { src: "/bus3.jpg", alt: "Calter Bus Medium" },
+            { src: "/bus2.jpg", alt: "Calter Elf Long" },
           ].map((item, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden rounded-xl bg-white p-2 group"
-            >
+            <div key={index} className="relative aspect-square w-full h-auto overflow-hidden rounded-xl bg-white group">
               <Image
                 src={item.src}
                 alt={item.alt}
-                width={300}
-                height={200}
-                className="rounded-xl transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+                fill
+                className="bg-white p-1 object-cover object-center rounded-xl transition-transform duration-300 group-hover:scale-105 brightness-50 group-hover:brightness-100"
+                sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           ))}

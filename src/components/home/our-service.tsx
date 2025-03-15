@@ -9,7 +9,7 @@ export default function OurService() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 px-4 md:px-6 lg:px-8">
           <ServiceCard
-            imageSrc="/travel1.jpeg"
+            imageSrc="/travel4.jpg"
             title="Travel"
             description="Layanan transportasi yang menyediakan perjalanan bagi individu atau kelompok..."
             link="/travel"

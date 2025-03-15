@@ -13,7 +13,7 @@ export default function Armada() {
     { src: "/calter-grandmax.jpg", alt: "Grandmax" },
     { src: "/calter-elf-short.jpeg", alt: "Elf Short" },
     { src: "/calter-elf-long.jpeg", alt: "Elf Long" },
-    { src: "/calter-bus-medium.jpeg", alt: "Bus Medium" },
+    { src: "/bus2.jpg", alt: "Bus Medium" },
   ].map((item, index) => (
     <div
       key={index}
