@@ -1,5 +1,5 @@
-import Hero from "./hero";
-import OurService from "./our-service";
+import Hero from "@/components/home/hero";
+import OurService from "@/components/home/our-service";
 
 export default function HomePage() {
   return (

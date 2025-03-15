@@ -1,84 +1,19 @@
-// "use client";
-// import { useState } from 'react';
-
-// export default function ContactPage() {
-//   const [name, setName] = useState('');
-//   const [email, setEmail] = useState('');
-//   const [message, setMessage] = useState('');
-//   const [status, setStatus] = useState('');
-
-//   const handleSubmit = async (e: React.FormEvent) => {
-//     e.preventDefault();
-//     setStatus('');
-
-//     const res = await fetch('/api/contact', {
-//       method: 'POST',
-//       headers: {
-//         'Content-Type': 'application/json',
-//       },
-//       body: JSON.stringify({ name, email, message }),
-//     });
-
-//     try {
-//       if (res.ok) {
-//         setStatus('Message sent successfully!');
-//       } else {
-//         const data = await res.json();
-//         setStatus(data.message);
-//       }
-//     } catch (err) {
-//       setStatus('Failed to send message. Please try again later.');
-//     }
-//   };
-
-//   return (
-//     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-//       <div className="bg-white p-8 rounded-lg shadow-md max-w-md w-full">
-//         <h1 className="text-2xl font-bold mb-6 text-center text-zinc-900">Contact Us</h1>
-//         <form onSubmit={handleSubmit} className="space-y-4">
-//           {status && <p className="text-center">{status}</p>}
-//           <label htmlFor="name" className="text-black">Name</label>
-//           <input
-//             type="text"
-//             placeholder="Name"
-//             value={name}
-//             onChange={(e) => setName(e.target.value)}
-//             className="text-black w-full px-4 py-2 rounded border-2 border-black"
-//             required
-//           />
-//           <label htmlFor="email" className="text-black">Email</label>
-//           <input
-//             type="email"
-//             placeholder="Email"
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//             className="text-black w-full px-4 py-2 rounded border-2 border-black"
-//             required
-//           />
-//           <label htmlFor="message" className="text-black">Message</label>
-//           <textarea
-//             placeholder="Your message"
-//             value={message}
-//             onChange={(e) => setMessage(e.target.value)}
-//             className="text-black w-full px-4 py-2 rounded border-2 border-black"
-//             required
-//           />
-//           <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-//             Send Message
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
-
-import { FaWhatsapp, FaInstagram, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaEnvelope,
+  FaTiktok,
+  FaYoutube,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import Link from "next/link";
 
 export default function ContactUs() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-neutral-900 text-white px-6 py-16">
-      <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">Hubungi Kami</h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
+        Hubungi Kami
+      </h2>
 
       <div className="w-full max-w-lg flex flex-col gap-6">
         {/* WhatsApp */}
@@ -86,10 +21,10 @@ export default function ContactUs() {
           href="https://wa.me/6282135750670"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 bg-emerald-500 p-4 rounded-xl shadow-md hover:bg-emerald-700 transition"
+          className="flex items-center gap-4 bg-emerald-500 px-4 py-2 rounded-xl shadow-md hover:bg-emerald-700 transition"
         >
-          <FaWhatsapp className="text-3xl" />
-          <span className="text-lg font-medium">WhatsApp: +62 812-3456-7890</span>
+          <FaWhatsapp className="text-2xl" />
+          <span className="text-lg font-medium"> +62{" "} 821-3575-0670</span>
         </Link>
 
         {/* Instagram */}
@@ -97,31 +32,52 @@ export default function ContactUs() {
           href="https://www.instagram.com/andriraaa/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 bg-amber-500 p-4 rounded-xl shadow-md hover:bg-amber-700 transition"
+          className="flex items-center gap-4 bg-pink-500 px-4 py-2 rounded-xl shadow-md hover:bg-pink-700 transition"
         >
-          <FaInstagram className="text-3xl" />
-          <span className="text-lg font-medium">@Andriraaa
-          </span>
+          <FaInstagram className="text-2xl" />
+          <span className="text-lg font-medium">@Andriraaa</span>
+        </Link>
+
+        {/* tiktok */}
+        <Link
+          href="http://www.tiktok.com/@andrirahmnt_"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-4 bg-slate-600 px-4 py-2 rounded-xl shadow-md hover:bg-slate-500 transition"
+        >
+          <FaTiktok className="text-2xl" />
+          <span className="text-lg font-medium">@Andriraaa</span>
+        </Link>
+
+        {/* youtube */}
+        <Link
+          href="https://youtube.com/@Andrirahmnt"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-4 bg-red-700 px-4 py-2 rounded-xl shadow-md hover:bg-red-500 transition"
+        >
+          <FaYoutube className="text-2xl" />
+          <span className="text-lg font-medium">Andrirahmnt_</span>
         </Link>
 
         {/* Email */}
         <Link
           href="mailto:andrirahmanto69@gmail.com"
-          className="flex items-center gap-4 bg-blue-500 p-4 rounded-xl shadow-md hover:bg-blue-700 transition"
+          className="flex items-center gap-4 bg-yellow-500 px-4 py-2 rounded-xl shadow-md hover:bg-yellow-700 transition"
         >
-          <FaEnvelope className="text-3xl" />
+          <FaEnvelope className="text-2xl" />
           <span className="text-lg font-medium">andrirahmanto69@gmail.com</span>
         </Link>
 
         {/* Lokasi */}
         <Link
-          href="https://goo.gl/maps/example"
+          href="https://www.google.com/maps/place/Garung+Sangak,+Garunglor,+Kec.+Sukoharjo,+Kabupaten+Wonosobo,+Jawa+Tengah/@-7.3684599,109.7972535,16z/data=!3m1!4b1!4m15!1m8!3m7!1s0x2e7aa7ab0ac09417:0x1343d6ccd0f65b77!2sGarung+Sangak,+Garunglor,+Kec.+Sukoharjo,+Kabupaten+Wonosobo,+Jawa+Tengah!3b1!8m2!3d-7.3696719!4d109.8023267!16s%2Fg%2F11f613y71j!3m5!1s0x2e7aa7ab0ac09417:0x1343d6ccd0f65b77!8m2!3d-7.3696719!4d109.8023267!16s%2Fg%2F11f613y71j?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 bg-red-600 p-4 rounded-xl shadow-md hover:bg-red-700 transition"
+          className="flex items-center gap-4 bg-blue-600 px-4 py-2 rounded-xl shadow-md hover:bg-blue-700 transition"
         >
-          <FaMapMarkerAlt className="text-3xl" />
-          <span className="text-lg font-medium">Wonosobo, Jawa Tengah</span>
+          <FaMapMarkerAlt className="text-2xl" />
+          <span className="text-lg font-medium">Desa Garunglor, Kec Sukoharjo, Kab Wonosobo.</span>
         </Link>
       </div>
     </div>
