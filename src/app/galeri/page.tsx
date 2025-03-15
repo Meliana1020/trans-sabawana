@@ -141,6 +141,13 @@ export default function GalleryPage() {
       tags: [],
       type: "video",
     },
+    {
+      id: 20,
+      title: "Video Travel Lane",
+      video: "/travel.mp4",
+      tags: [],
+      type: "video",
+    },
   ];
 
   const handleVideoClick = (itemId: number) => {
@@ -201,13 +208,13 @@ export default function GalleryPage() {
                   </div>
                 ) : (
                   <>
-                    <div className="aspect-video h-80 sm:h-96 lg:h-[30rem]">
+                    <div className="video h-90 sm:h-96 lg:h-[35rem]">
                       <video
                         ref={(el: HTMLVideoElement | null) => {
                           videoRefs.current[item.id] = el;
                         }}
                         src={item.video as string}
-                        className="object-cover w-full  h-full"
+                        className="object-fill w-full  h-full"
                         onEnded={() => handleVideoEnd(item.id)}
                         onPlay={() =>
                           setIsPlaying((prev) => ({ ...prev, [item.id]: true }))
