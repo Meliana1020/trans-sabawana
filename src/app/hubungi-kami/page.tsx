@@ -71,7 +71,7 @@ export default function ContactUs() {
 
         {/* Lokasi */}
         <Link
-          href="https://www.google.com/maps/place/Garung+Sangak,+Garunglor,+Kec.+Sukoharjo,+Kabupaten+Wonosobo,+Jawa+Tengah/@-7.3684599,109.7972535,16z/data=!3m1!4b1!4m15!1m8!3m7!1s0x2e7aa7ab0ac09417:0x1343d6ccd0f65b77!2sGarung+Sangak,+Garunglor,+Kec.+Sukoharjo,+Kabupaten+Wonosobo,+Jawa+Tengah!3b1!8m2!3d-7.3696719!4d109.8023267!16s%2Fg%2F11f613y71j!3m5!1s0x2e7aa7ab0ac09417:0x1343d6ccd0f65b77!8m2!3d-7.3696719!4d109.8023267!16s%2Fg%2F11f613y71j?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"
+          href="https://www.google.com/maps/place/Trans+Sabawana+Jasa+Travel+Wonosobo+%7C+Carter+Armada+%7C+Open+Trip+Wonosobo/@-7.3632048,109.8024524,17z/data=!4m7!3m6!1s0x2e7aa75df894ebf7:0x805efebf07d3ca13!4b1!8m2!3d-7.3631942!4d109.803815!16s%2Fg%2F11x18pg7b7?entry=ttu&g_ep=EgoyMDI1MDMxNy4wIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 bg-blue-600 px-4 py-2 rounded-xl shadow-md hover:bg-blue-700 transition"

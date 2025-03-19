@@ -9,10 +9,10 @@ export default function Armada() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
   {[
-    { src: "/calter-avanza.jpeg", alt: "Avanza" },
+    { src: "/calter-avanza.jpg", alt: "Avanza" },
     { src: "/calter-grandmax.jpg", alt: "Grandmax" },
-    { src: "/calter-elf-short.jpeg", alt: "Elf Short" },
-    { src: "/calter-elf-long.jpeg", alt: "Elf Long" },
+    { src: "/calter-elf-short.jpg", alt: "Elf Short" },
+    { src: "/calter-elf-long.jpg", alt: "Elf Long" },
     { src: "/bus2.jpg", alt: "Bus Medium" },
   ].map((item, index) => (
     <div

@@ -5,7 +5,7 @@ const imageData = [
   { id: 1, src: "/travel1.jpg", alt: "Travel scene 1" },
   { id: 2, src: "/travel4.jpg", alt: "Travel scene 2" },
   { id: 3, src: "/travel3.jpg", alt: "Travel scene 3" },
-  { id: 4, src: "/calter-elf-short.jpeg", alt: "Travel scene 4" },
+  { id: 4, src: "/bus3.jpg", alt: "Travel scene 4" },
 ];
 
 export default function Hero() {

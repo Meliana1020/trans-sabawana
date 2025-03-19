@@ -12,6 +12,7 @@ export default function Rute() {
               <li>✅ Purwokerto - Semarang <span className="font-bold">Rp 170.000,00</span></li>
               <li>✅ Wonosobo - Salatiga <span className="font-bold">Rp 150.000,00</span></li>
               <li>✅ Wonosobo - Jepara - Demak - Kudus - Pati <span className="font-bold">Rp 250.000,00</span></li>
+              <li>✅ Wonosobo - Surabaya <span className="font-bold">Rp 400.000,00</span></li>
             </ul>
           </div>
   
